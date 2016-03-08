@@ -48,10 +48,16 @@ vim +PluginInstall +qall
 
 if [ "$(uname)" == "Darwin" ]; then # Mac OS x
     brew install python
+    pip install --user powerline-status
+    pip install --user git+git://github.com/powerline/powerline
+    brew install macvim --env-std --override-system-vim
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then # Linux
-    sudo apt-get install python-pip
+    sudo apt-get install -y python-pip
     pip install -U pip
     su -c 'pip install git+git://github.com/Lokaltog/powerline'
-
 fi
-brew install python
+
+#Installing my preferred fonts
+wget https://github.com/powerline/fonts/blob/master/Meslo/Meslo%20LG%20S%20DZ%20Regular%20for%20Powerline.otf
+mv Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline.otf /usr/share/fonts
+sudo mv Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline.otf /usr/share/fonts

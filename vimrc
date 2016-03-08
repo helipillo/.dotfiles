@@ -30,7 +30,6 @@ syntax on
 " The mapleader has to be set before vundle starts loading all 
 " the plugins.
 let mapleader=","
-let g:airline#extensions#tabline#enabled = 1
 
 " ================ Turn Off Swap Files ==============
 
@@ -131,7 +130,6 @@ Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'Shougo/unite.vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -156,3 +154,4 @@ set tabstop=4
 set expandtab
 
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
+let g:airline#extensions#tabline#enabled = 1
