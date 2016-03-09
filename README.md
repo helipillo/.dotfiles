@@ -19,11 +19,12 @@ bash setup.sh
 ##Bonus Track
 For the lazy console lovers, the setup will add and implement a executable to open a google window in your browser with the desired search query
 
-###Usage
-Type the following on your zsh console (e.g):
-```shell
-google "github/helipillo"
-```
+  ###Usage
+  Type the following on your zsh console (e.g):
+  ```shell
+  google "github/helipillo"
+  ```
 
 
-### .dotfiles are not yet ready, so errors may occur =)
+
+> .dotfiles are not 100% ready, so errors may occur =)
