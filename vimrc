@@ -153,5 +153,12 @@ set softtabstop=4
 set tabstop=4
 set expandtab
 
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline_theme='solarized'
+
+syntax enable
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
