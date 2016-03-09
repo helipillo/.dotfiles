@@ -1,10 +1,3 @@
-# First, lets change our shell to zsh
-
-if ! [ -n "$ZSH_VERSION" ]; 
-then 
-  echo "Setting zsh as the shell"
-  chsh -s /bin/zsh 
-fi;
 
 function echoerror() {
 	echo "$@" 1>&2;
@@ -33,7 +26,6 @@ function soft_link {
   fi
 }
 
-# Let's create soft links to the dotfile directory to keep them updated
 soft_link "vimrc" "$HOME/.vimrc"
 soft_link "zshrc" "$HOME/.zshrc"
 
@@ -60,4 +52,16 @@ fi
 #Installing my preferred fonts
 wget https://github.com/powerline/fonts/blob/master/Meslo/Meslo%20LG%20S%20DZ%20Regular%20for%20Powerline.otf
 mv Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline.otf /usr/share/fonts
-sudo mv Meslo\ LG\ S\ DZ\ Regular\ for\ Powerline.otf /usr/share/fonts
+
+# To finish, let's set our defualt shell as zsh
+
+if ! [ -n "$ZSH_VERSION" ]; 
+then 
+    echo "Setting zsh as the shell"
+    chsh -s /bin/zsh 
+fi;
+
+# Bonus lazy track google executable fom console
+chmod +x google
+soft_link "google" "$HOME/bin"
+source ~/.zshrc

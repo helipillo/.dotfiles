@@ -15,7 +15,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 # User configuration
 
-export PATH="~/Library/Python/2.7/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="~/Library/Python/2.7/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin"
 
 # Check system we are running in, to get the right path
 if [ "$(uname)" == "Darwin" ]; then # Mac Os X
